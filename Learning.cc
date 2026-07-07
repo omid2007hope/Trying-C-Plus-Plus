@@ -86,6 +86,8 @@ cin is pronounced "see-in". Used for input, and uses the extraction operator (>>
 
 string justTest = "Never Ever Give Up";
 
+string justAnotherText = "Hello";
+
 int main()
 {
     cout << "This is" << " " << betterFullName << "\n\n";
@@ -120,6 +122,24 @@ int main()
     */
 
     cout << justTest << " " << "Select the first index: " << justTest[0];
+
+    /*
+
+    To print the last character of a string, you can use the following code:
+
+    */
+
+    cout << justTest[justTest.length() - 1];
+
+    /* Change String Characters
+
+To change the value of a specific character in a string,
+refer to the index number, and use single quotes:
+
+    */
+
+    justAnotherText[0] = 'J';
+    cout << justAnotherText;
 
     return 0;
 }
