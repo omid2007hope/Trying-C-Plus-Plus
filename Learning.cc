@@ -121,7 +121,7 @@ int main()
 
     */
 
-    cout << justTest << " " << "Select the first index: " << justTest[0] << "\n\n";
+    cout << justTest << " " << "Select first index: " << justTest[0] << "\n\n";
 
     /*
 
@@ -129,7 +129,7 @@ int main()
 
     */
 
-    cout << justTest[justTest.length() - 1] << "\n\n";
+    cout << "Select last index: " << justTest[justTest.length() - 1] << "\n\n";
 
     /* Change String Characters
 
@@ -139,7 +139,7 @@ int main()
     */
 
     justAnotherText[0] = 'J';
-    cout << justAnotherText << "\n\n";
+    cout << "Select and change first index: " << justAnotherText << "\n\n";
 
     return 0;
 }
