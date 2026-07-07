@@ -1,4 +1,11 @@
 #include <iostream>
+
+/*
+
+To use strings, you must include an additional header file in the source code, the <string> library:
+
+*/
+
 #include <string>
 using namespace std;
 
