@@ -111,7 +111,7 @@ int main()
 
     */
 
-    cout << justTest << " " << "has the txt size of: " << justTest.size();
+    cout << justTest << " " << "has the txt size of: " << justTest.size() << "\n\n";
 
     /*
 
@@ -121,7 +121,7 @@ int main()
 
     */
 
-    cout << justTest << " " << "Select the first index: " << justTest[0];
+    cout << justTest << " " << "Select the first index: " << justTest[0] << "\n\n";
 
     /*
 
@@ -129,7 +129,7 @@ int main()
 
     */
 
-    cout << justTest[justTest.length() - 1];
+    cout << justTest[justTest.length() - 1] << "\n\n";
 
     /* Change String Characters
 
@@ -139,7 +139,7 @@ int main()
     */
 
     justAnotherText[0] = 'J';
-    cout << justAnotherText;
+    cout << justAnotherText << "\n\n";
 
     return 0;
 }
