@@ -33,7 +33,25 @@ double myHeight = 6.2;
 string myName = "Omid ";
 string mylastname = "Teimory";
 
+/* +
+
+The + operator can be used between strings to add them together to make a new string.
+This is called concatenation:
+
+However, you could also add a space with quotes (" " or ' '):
+
+*/
+
 string fullName = myName + " " + mylastname;
+
+/* Append()
+
+A string in C++ is actually an object,
+which contain functions that can perform certain operations on strings.
+For example, you can also concatenate strings with the append() function:
+
+*/
+
 string betterFullName = myName.append(mylastname);
 
 char bloodIdentifier = 'B';
@@ -68,8 +86,23 @@ int main()
     cout << "He has the height of" << " " << myHeight << "\n\n";
     cout << "Is he alive" << " " << isAlive << " " << "and has the blood type of" << " " << bloodIdentifier << bloodBar << "\n\n";
 
-    cout << "Never Ever Give Up has the txt length of: " << justTest.length() << "\n\n";
-    cout << "Never Ever Give Up has the txt size of: " << justTest.size();
+    /*
+
+    To get the length of a string, use the length() function:
+
+    */
+
+    cout << justTest << " " << "has the txt length of: " << justTest.length() << "\n\n";
+
+    /*
+
+    You might see some C++ programs that use the size() function to get the length of a string.
+    This is just an alias of length().
+    It is completely up to you if you want to use length() or size():
+
+    */
+
+    cout << justTest << " " << "has the txt size of: " << justTest.size();
 
     return 0;
 }
