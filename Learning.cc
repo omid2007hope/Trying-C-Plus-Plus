@@ -30,7 +30,7 @@ int myAge = 16;
 
 double myHeight = 6.2;
 
-string myName = "Omid";
+string myName = "Omid ";
 string mylastname = "Teimory";
 
 string fullName = myName + " " + mylastname;
