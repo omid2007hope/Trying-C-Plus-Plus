@@ -3,13 +3,17 @@
 #include <string>
 
 const int legalAgeInUS = 21;
-int age;
+const int thisYear = 2026;
 
 int main()
 {
 
-    std::cout << "Enter your age please! " << "\n\n";
-    std::cin >> age;
+    int birthYear;
+
+    std::cout << "Enter your year of birth please! " << "\n\n";
+    std::cin >> birthYear;
+
+    int age = thisYear - birthYear;
 
     if (legalAgeInUS <= age)
     {
