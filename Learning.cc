@@ -49,6 +49,15 @@ However, you could also add a space with quotes (" " or ' '):
 
 */
 
+/*
+
+Escape character	Result	                Description
+\'	                '	                    Single quote
+\"	                " 	                    Double quote
+\\	                \	                    Backslash
+
+*/
+
 string fullName = myName + " " + mylastname;
 
 /* Append()
@@ -89,8 +98,28 @@ string justTest = "Never Ever Give Up";
 string justAnotherText = "Hello";
 string oneMoreExtraText = "Hello";
 
+string inputFullname;
+
 int main()
 {
+
+    /*
+    cin considers a space (whitespace, tabs, etc) as a terminating character,
+    which means that it can only store a single word (even if you type many words):
+
+    That's why, when working with strings,
+    we often use the getline() function to read a line of text.
+    It takes cin as the first parameter, and the string variable as second:
+    */
+
+    cout << "Type your fullname, firstname + lastname here: " << "\n\n";
+    getline(cin, inputFullname);
+    cout << "your fullname is: " << inputFullname;
+
+    // ...........................................
+    // ...........................................
+    // ...........................................
+
     cout << "This is" << " " << betterFullName << "\n\n";
     cout << "He is" << " " << myAge << " " << "years old" << "\n\n";
     cout << "He has the height of" << " " << myHeight << "\n\n";
