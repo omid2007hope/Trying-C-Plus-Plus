@@ -16,6 +16,11 @@ true (1) or false (0).
 
 */
 
+int age = 21;
+const int votingAge = 18;
+
+bool isAboveVotingAge = age >= votingAge;
+
 int x = 10;
 int y = 5;
 
@@ -44,15 +49,19 @@ int main()
 
     */
 
-    cout << isCodingFun << "\n"; // Outputs true
-    cout << isFishTasty << "\n"; // Outputs false
+    cout << isCodingFun << "\n"
+         << endl; // Outputs true
+    cout << isFishTasty << "\n"
+         << endl; // Outputs false
 
     cout << noboolalpha; // reset to 1/0
 
     // If you want to go back to the default behavior (printing 1 and 0), you can use noboolalpha:
 
-    cout << isCodingFun << "\n"; // Outputs true
-    cout << isFishTasty << "\n"; // Outputs false
+    cout << isCodingFun << "\n"
+         << endl; // Outputs true
+    cout << isFishTasty << "\n"
+         << endl; // Outputs false
 
     /*
 
@@ -64,7 +73,11 @@ int main()
 
     cout << (x > 5); // returns 1 (true), because 10 is higher than 5
 
-    cout << ifGreater;
+    cout << ifGreater << endl;
+
+    cout << boolalpha; // enable printing "true"/"false"
+
+    cout << isAboveVotingAge << endl;
 
     return 0;
 };
