@@ -16,6 +16,12 @@ true (1) or false (0).
 
 */
 
+int x = 10;
+int y = 5;
+
+// You can also store the result of a comparison in a bool variable:
+bool ifGreater = x > y;
+
 bool isCodingFun = true;
 bool isFishTasty = false;
 
@@ -55,6 +61,10 @@ int main()
     and you can switch between them using boolalpha and noboolalpha.
 
     */
+
+    cout << (x > 5); // returns 1 (true), because 10 is higher than 5
+
+    cout << ifGreater;
 
     return 0;
 };
