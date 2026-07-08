@@ -36,8 +36,29 @@ Escape character	Result	                Description
 
 */
 
+char strInArray[] = "Blue";
+
+/*
+
+It represents the second option: an array of individual characters ['B', 'l', 'u', 'e', '\0'].
+
+In C and C++, a string literal like "Blue" is stored as a sequence of characters in memory, terminated by a null character (\0). When you declare char strInArray[] = "Blue";, the compiler creates an array where each element holds one character:
+
+strInArray[0] = 'B'
+strInArray[1] = 'l'
+strInArray[2] = 'u'
+strInArray[3] = 'e'
+strInArray[4] = '\0' (null terminator)
+
+char name[] = "Leo";
+Memory: ['L', 'e', 'o', '\0']
+
+*/
+
 int main()
 {
+
+    cout << strInArray;
 
     return 0;
 };
