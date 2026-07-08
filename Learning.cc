@@ -87,6 +87,7 @@ cin is pronounced "see-in". Used for input, and uses the extraction operator (>>
 string justTest = "Never Ever Give Up";
 
 string justAnotherText = "Hello";
+string oneMoreExtraText = "Hello";
 
 int main()
 {
@@ -140,6 +141,36 @@ int main()
 
     justAnotherText[0] = 'J';
     cout << "Select and change first index: " << justAnotherText << "\n\n";
+
+    /*
+
+    text[0] uses the array subscript operator,
+    which is faster but does not perform bounds checking.
+    Accessing an out-of-range index results in undefined behavior,
+    potentially causing crashes or memory corruption.
+
+    text.at(0) is a member function that performs bounds checking.
+    If the index is invalid, it throws a std::out_of_range exception rather than causing undefined behavior,
+    making it safer for debugging and robustness.
+
+    Key Differences
+
+    Feature	                text[0]	                         text.at(0)
+    Bounds Checking	        None	                         Yes
+    Error Handling	        Undefined Behavior	             Throws std::out_of_range
+    Performance	            Faster	                         Slightly slower due to checks
+    Use Case	            Performance-critical code	     Safety-critical or debugging
+
+    In summary,
+    use text[0] for performance when indices are guaranteed to be valid,
+    and text.at(0) when safety and explicit error handling are priorities.
+
+    */
+
+    oneMoreExtraText.at(0) = 'J';
+
+    cout << "Select and change first index with - at() :\n"
+         << oneMoreExtraText << "\n\n";
 
     return 0;
 }
