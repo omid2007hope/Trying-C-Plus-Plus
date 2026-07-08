@@ -10,8 +10,8 @@ int z = 15;
 int main()
 {
 
-    cout << max(x, y, z);
-    cout << min(x, y, z);
+    cout << max(x, y);
+    cout << min(x, y);
 
     return 0;
 };
