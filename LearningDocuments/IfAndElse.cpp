@@ -2,8 +2,7 @@
 #include <cmath>
 #include <string>
 
-const int legalAgeInUS = 21;
-const int thisYear = 2026;
+using namespace std;
 
 /*
 
@@ -17,29 +16,31 @@ Use switch to specify many alternative blocks of code to be executed
 int main()
 {
 
-    int birthYear;
+    const int legalAgeInUS = 21;
+    const int thisYear = 2026;
+
+    const int birthYearInID = 2007;
+
+    int birthEntryByUser;
 
     std::cout << "Enter your year of birth please! " << "\n\n";
-    std::cin >> birthYear;
+    std::cin >> birthEntryByUser;
 
-    int age = thisYear - birthYear;
-    bool child = 14 >= age && 0 != age;
-    bool teen = 14 < age && 21 > age;
-    bool adult = 21 <= age && 40 >= age;
-    bool old = 40 <= age && 80 >= age;
-    bool toOld = 80 <= age;
+    int ageBaseOnID = thisYear - birthYearInID;
+    int ageEntryByUser = thisYear - birthEntryByUser;
+
+    bool verfiy = ageBaseOnID == ageEntryByUser;
+    bool policy = (verfiy) ? "+21\n User is Verified \n\n" : "Age verification failed, please try again \n\n Note: flase age entry";
+
+    std::cout << policy << "\n\n";
+
+    bool adult = 21 <= ageEntryByUser && 40 >= ageEntryByUser;
+    bool old = 40 <= ageEntryByUser && 80 >= ageEntryByUser;
+    bool toOld = 80 <= ageEntryByUser;
 
     if (adult)
     {
         std::cout << "Recommend Beer.";
-    }
-    else if (teen)
-    {
-        std::cout << "Recommend Soda.";
-    }
-    else if (child)
-    {
-        std::cout << "Recommend Water";
     }
     else if (old)
     {
