@@ -4,7 +4,7 @@ bool loaded = false;
 bool loading = false;
 
 int limit = 20;
-int notLoaded = 0;
+
 const int alreadyLoaded = 0;
 
 int main()
@@ -18,9 +18,8 @@ int main()
         {
             if (loaded == false && alreadyLoaded == 0)
             {
-                while (notLoaded < limit)
+                for (int notLoaded = 0; notLoaded < limit; ++notLoaded)
                 {
-                    ++notLoaded;
                     std::cout << "Product number: " << notLoaded << " loaded succesfully" << "\n\n";
                 }
             }
