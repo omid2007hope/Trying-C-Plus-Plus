@@ -18,7 +18,7 @@ int main()
         {
             if (loaded == false && alreadyLoaded == 0)
             {
-                while (notLoaded <= limit)
+                while (notLoaded < limit)
                 {
                     ++notLoaded;
                     std::cout << "Product number: " << notLoaded << " loaded succesfully" << "\n\n";
