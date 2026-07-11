@@ -5,13 +5,13 @@ int num[3] = {10, 20, 30};
 
 int age[] = {18, 25, 32, 40, 30, 19, 37, 50};
 
-// Count
-int length = sizeof(age) / sizeof(age[0]);
-
 double sum, avgAge = 0;
 
 main()
 {
+
+    // Count
+    int length = sizeof(age) / sizeof(age[0]);
 
     std::cout << "Age array length: " << length << std::endl;
 
