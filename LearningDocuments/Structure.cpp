@@ -1,6 +1,16 @@
 #include <iostream>
 #include <string>
 
+/*
+C++ Structures
+
+Structures (also called structs) are a way to group several related variables into one place.
+Each variable in the structure is known as a member of the structure.
+Unlike an array, a structure can contain many different data types: int, string, bool, etc.
+*/
+
+// Option 1
+
 struct
 {
     std::string brand;
@@ -13,14 +23,36 @@ struct
     double finalPrice;
 } watchOne, watchTwo;
 
+// Option 2
+
+struct car
+{
+    std::string brand;
+    std::string model;
+    int serialNum;
+};
+
 int main()
 {
 
+    // Option 2
+    car myCar;
+    myCar.brand = "BMW";
+    myCar.model = "B";
+    myCar.serialNum = 10101;
+
+    car yourCar;
+    yourCar.brand = "Ford";
+    yourCar.model = "A";
+    yourCar.serialNum = 10203;
+
+    // Option 1
+
     std::cout << "Brand" << "\n\n";
-    std::cin >> watchOne.brand;
+    std::getline(std::cin, watchOne.brand);
 
     std::cout << "Unit's Model " << "\n\n";
-    std::cin >> watchOne.model;
+    std::getline(std::cin, watchOne.model);
 
     std::cout << "Unit's serial number " << "\n\n";
     std::cin >> watchOne.serialNumber;
@@ -47,6 +79,7 @@ int main()
     double resultInTotal = result * watchOne.howManyUnits;
 
     std::cout << "Brand: " << watchOne.brand << "\n\n";
+
     std::cout << "Model: " << watchOne.model << "\n\n";
     std::cout << "Serial Number: " << watchOne.serialNumber << "\n\n";
 
