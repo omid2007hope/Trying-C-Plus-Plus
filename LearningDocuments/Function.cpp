@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 /*
 C++ provides some pre-defined functions, such as main(),
@@ -7,9 +8,11 @@ which is used to execute code. But you can also create your own functions to per
 
 // ! void means that the function does not have a return value. You will learn more about return values later in the next chapter
 
-void justAFunction()
+std::string lastName = " Wesker";
+
+void justAFunction(std::string fullName)
 {
-    std::cout << "I just got executed!";
+    std::cout << fullName << lastName << "\n\n";
 };
 
 /*
@@ -23,10 +26,10 @@ int main()
 {
 
     // ! Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are called.
-    justAFunction();
+    justAFunction("Omid");
     // ! A function can be called multiple times :
-    justAFunction();
-    justAFunction();
+    justAFunction("Albert");
+    justAFunction("James");
     // ETC
 
     return 0;
@@ -43,18 +46,18 @@ You will often see C++ programs that have function declaration above main(),
 and function definition below main(). This will make the code better organized and easier to read:
 */
 
-// Function declaration
-void myFunction();
+// !  Function declaration
+// void myFunction();
 
-// The main method
-int main()
-{
-    myFunction(); // call the function
-    return 0;
-}
+// ! The main method
+// int main()
+// {
+//     myFunction(); // call the function
+//     return 0;
+// }
 
-// Function definition
-void myFunction()
-{
-    std::cout << "I just got executed!";
-}
+// !  Function definition
+// void myFunction()
+// {
+//     std::cout << "I just got executed!";
+// }
