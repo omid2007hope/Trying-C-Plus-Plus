@@ -13,6 +13,12 @@ int toMeterPerSecond(double speed)
     return speed * 1000;
 };
 
+int toKmPerHour(double d)
+{
+
+    return d / 1000;
+};
+
 int main()
 {
 
@@ -22,7 +28,9 @@ int main()
 
     double t = 0.0756389942271;
 
-    std::cout << "Distance is: " << computeDistance(v, t);
+    double distance = computeDistance(v, t);
+
+    std::cout << "Distance is: " << toKmPerHour(distance) << " km/h";
 
     return 0;
 };
