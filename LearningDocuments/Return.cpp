@@ -1,26 +1,28 @@
 #include <iostream>
 #include <cmath>
 
-int roundIt(int num)
+int computeDistance(double v, double t)
 {
 
-    return round(num);
+    return t * v / 2;
 };
 
-int toKmPerHour(int speed)
+int toMeterPerSecond(double speed)
 {
 
-    return speed / 1000;
+    return speed * 1000;
 };
 
 int main()
 {
 
-    int speedOfLight = 299792458;
+    double speedOfLight = 299792.458;
 
-    double x = toKmPerHour(speedOfLight);
+    double v = toMeterPerSecond(speedOfLight);
 
-    std::cout << "Result " << roundIt(x);
+    double t = 0.0756389942271;
+
+    std::cout << "Distance is: " << computeDistance(v, t);
 
     return 0;
 };
