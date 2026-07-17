@@ -4,7 +4,7 @@
 int computeDistance(double v, double t)
 {
 
-    return t * v / 2;
+    return (t * v) / 2;
 };
 
 int toMeterPerSecond(double speed)
