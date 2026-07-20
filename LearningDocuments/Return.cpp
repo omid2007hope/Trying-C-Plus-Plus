@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> 
 #include <cmath>
 
 int computeDistance(double v, double t)
